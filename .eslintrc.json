@@ -1,0 +1,72 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:prettier/recommended",
+    "plugin:import/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module",
+    "tsconfigRootDir": ".",
+    "project": ["./tsconfig.json"]
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json"
+      }
+    },
+    "react": {
+      "version": "18.x"
+    }
+  },
+  "rules": {
+    "linebreak-style": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "extendDefaults": true,
+        "types": {
+          "{}": false
+        }
+      }
+    ],
+    // "no-param-reassign": ["error", { "props": true, "ignorePropertyModificationsFor": ["state"] }],
+    "react/function-component-definition": [2, { "namedComponents": "arrow-function" }],
+    "import/order": ["error", { "newlines-between": "never" }],
+    "@typescript-eslint/no-unsafe-assignment": "off",
+    "react/prop-types": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/click-events-have-key-events": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "no-unused-vars": "off",
+    "arrow-body-style": ["off"],
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/no-unused-vars": ["warn"],
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "react/require-default-props": "off",
+    "no-shadow": "off",
+    "react/jsx-props-no-spreading": "off",
+    "import/no-unresolved": "off",
+    "react/no-unstable-nested-components": "off",
+    "consistent-return": "off",
+    "no-param-reassign": "off"
+  }
+}

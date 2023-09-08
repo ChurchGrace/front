@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700;900&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+html,
+body {
+  position: relative;
+  word-break: break-all !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  padding: 0;
+}
+
+body {
+  background-color: #121212 !important;
+}
+
+.MuiPaper-root.MuiMenu-paper.MuiPaper-elevation {
+  background-color: rgb(16 42 67) !important;
+  color: #ffff !important;
+}
+
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-elevation0.MuiDrawer-paper.MuiDrawer-paperAnchorLeft.MuiDrawer-paperAnchorDockedLeft.css-1l8j5k8,
+.css-wf16b5 {
+  background-color: #424242 !important;
+  a {
+    text-decoration: none !important;
+  }
+  span {
+    font-weight: 700 !important;
+  }
+}
+
+.css-8hwlxz-MuiSkeleton-root > * {
+  visibility: visible !important;
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+  width: 100% !important;
+  height: 100% !important;
+}
